@@ -27,7 +27,7 @@ Werden keine IBANs übergeben, so wird der Benutzer durch eine Benutzereingabe d
 
 Das Formatierung der IBAN ist nicht entscheidend. Wichtig ist, dass die Nummer folgendem Muster entspricht:
 
-`CNPR BANK LZHL KONT NUMM ER`, wobei `CN` dem Länderkürzel und `XX` der Prüfziffer entspricht. Außerdem ist die Verwendung von Leerzeichen nebensächlich.
+`CNPR BANK LZHL KONT NUMM ER`, wobei `CN` dem Länderkürzel und `XX` der Prüfziffer entspricht. Außerdem ist die Verwendung von Leerzeichen nebensächlich. Werden jedoch Leerzeichen benutzt, so müssen die IBANs bei der Kommandozeilenparameterübergabe durch Anführungszeichen umschlossen werden.
 
 Zur Berechnung einer Prüfziffer muss diese durch einen Dummy maskiert werden. "XX" beispielsweise bietet sich an.
 
