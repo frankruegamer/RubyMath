@@ -12,7 +12,7 @@ def answer(iban_check)
   iban_check ? 'valid' : 'invalid'
 end
 
-def format(iban)
+def format_iban(iban)
   iban.delete(' ').upcase.scan(/.{1,4}/).join(' ')
 end
 
@@ -22,5 +22,5 @@ unless ARGV.length > 0
   ARGV[0] = gets.chomp
   puts
 end
-ARGV.each { |iban| puts "#{format iban}: #{answer(check iban)}" }
+ARGV.each { |iban| puts "#{format_iban iban}: #{answer(check iban)}" }
 puts
