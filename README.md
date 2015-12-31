@@ -26,6 +26,7 @@ Prüft übergebene IBANs auf deren Korrektheit. Alternativ kann die Prüfziffer 
 Werden keine IBANs übergeben, so wird der Benutzer durch eine Benutzereingabe dazu aufgefordert eine einzugeben.
 
 Das Formatierung der IBAN ist nicht entscheidend. Wichtig ist, dass die Nummer folgendem Muster entspricht:
+
 `CNPR BANK LZHL KONT NUMM ER`, wobei `CN` dem Länderkürzel und `XX` der Prüfziffer entspricht. Außerdem ist die Verwendung von Leerzeichen nebensächlich.
 
 Zur Berechnung einer Prüfziffer muss diese durch einen Dummy maskiert werden. "XX" beispielsweise bietet sich an.
