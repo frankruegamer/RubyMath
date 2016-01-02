@@ -31,8 +31,8 @@ ARGV.each do |arg|
   next if (n = arg.to_i) <= 0
   numberlist.push(n)
 end
-longest = numberlist.map { |n| n.to_s.length }.max + 1
 if numberlist.length > 0
+  longest = numberlist.map { |n| n.to_s.length }.max + 1
   puts "\nIs <n> a prime number?"
   numberlist.each do |n|
     prime = prime?(n)
