@@ -29,7 +29,7 @@ end
 numberlist = []
 ARGV.each do |arg|
   next if (n = arg.to_i) <= 0
-  numberlist.push(n)
+  numberlist << n
 end
 if numberlist.length > 0
   longest = numberlist.map { |n| n.to_s.length }.max + 1
