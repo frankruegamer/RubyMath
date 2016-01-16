@@ -18,7 +18,7 @@ end
 
 def phi(m_list)
   product = 1
-  m_list.each { |element| product *= (element-1) }
+  m_list.each { |element| product *= (element - 1) }
   product
 end
 
