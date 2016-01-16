@@ -9,8 +9,8 @@ def eukld(a, m)
     y.push(y[-2] - (q[-1] * y[-1]).to_i)
   end
   puts "\n    y     r |   q\n" << '-' * 18
-  y.zip(r, q).each { |p| puts '%5s %5s | %3s' % p }
-  puts "#{' '*10}0 |"
+  y.zip(r, q).each { |p| printf('%5s %5s | %3s', p) }
+  puts "#{' ' * 10}0 |"
   puts "\nggT(#{a}, #{m}) = #{r[-2]}"
 end
 
